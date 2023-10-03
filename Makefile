@@ -6,8 +6,11 @@ help: ## Show this doc
 install: ## Install the project
 	symfony composer install
 	symfony composer require --dev orm-fixtures
-	symfony console d:d:c
+	symfonycomposer require symfony/webpack-encore-bundle
+	npm i
+	composer require easycorp/easyadmin-bundle
 	
+	symfony console d:d:c
 	make rebuild
 
 rebuild: ## Rebuild database
