@@ -9,8 +9,9 @@ install: ## Install the project
 	symfony composer require symfony/webpack-encore-bundle
 	npm i
 	symfony composer require easycorp/easyadmin-bundle
+	symfony composer require symfony/security-bundle
 	
-	symfony console d:d:d
+	symfony console d:d:d -f
 	symfony console d:d:c
 	make rebuild
 

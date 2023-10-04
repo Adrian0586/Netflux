@@ -18,4 +18,20 @@ class UserController extends AbstractController
             'users' => $userRepository->findAll(),
         ]);
     }
+
+    #[Route('/signup', name:'app_signup')]
+    public function signup(
+
+    )
+    {
+
+    }
+
+    #[Route('/signin', name:'app_signin')]
+    public function signin(
+
+    )
+    {
+        
+    }
 }
