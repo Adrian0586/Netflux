@@ -26,4 +26,9 @@ class UserController extends AbstractController
             'user' => $user,
         ]);
     }
+    #[Route('/signup', name: 'app_signin')]
+    public function signup(UserRepository $userRepository): Response
+    {
+        return $this->render('user/signup.html.twig');
+    }
 }
