@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Video{% endblock %}
+
+{% block body %}
+    <div class="titre"><h1>Netflux</h1></div>
+    <h2>A propos</h2>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Title</th>
+                <td>{{ video.title }}</td>
+            </tr>
+            <tr>
+                <th>Video</th>
+                <td>{{ video.link }}</td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>{{ video.category }}</td>
+            </tr>
+            <tr>
+                <th>Date d'ajout</th>
+                <td>{{ video.added_date }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ video.description }}</td>
+            </tr>   
+        </tbody>
+    </table>
+{% endblock %}
